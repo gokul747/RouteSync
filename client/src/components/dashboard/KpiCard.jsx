@@ -1,0 +1,1 @@
+export default function KpiCard({ label, value, detail, icon: Icon, tone = 'blue' }) { return <article className="kpi-card"><div className={`kpi-icon ${tone}`}>{Icon && <Icon size={19}/>}</div><div className="kpi-label">{label}</div><strong>{value}</strong><small>{detail}</small></article> }

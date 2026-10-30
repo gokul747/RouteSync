@@ -1,0 +1,3 @@
+import { Clock3, MapPin } from 'lucide-react'
+import { EmptyState } from '../ui/StateMessages'
+export default function TodaySchedule({ shipments = [] }) { const rows = shipments.filter(s => s.status === 'assigned' || s.status === 'in_transit').slice(0,4); return rows.length ? <div className="schedule-list">{rows.map((s,i) => <div className="schedule-item" key={s._id}><span className="schedule-time">{String(9 + i * 2).padStart(2,'0')}:{i ? '30' : '00'}</span><span className="schedule-line"/><div><strong>{s.reference}</strong><span><MapPin size={12}/>{s.destination || 'Destination pending'}</span></div><Clock3 size={15} className="muted"/></div>)}</div> : <EmptyState title="Nothing scheduled" detail="Assigned deliveries will show here."/> }

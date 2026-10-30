@@ -1,0 +1,3 @@
+import StatusBadge from '../ui/StatusBadge'
+const steps = ['pending', 'assigned', 'in_transit', 'delivered']
+export default function PipelineBreakdown({ shipments = [] }) { const counts = steps.map(status => ({ status, count: shipments.filter(s => s.status === status).length })); const max = Math.max(...counts.map(x => x.count), 1); return <div className="pipeline">{counts.map(({ status, count }) => <div className="pipeline-row" key={status}><div className="pipeline-title"><StatusBadge status={status}/><span>{count}</span></div><div className="bar-track"><div className={`bar-fill ${status}`} style={{ width: `${Math.max(count / max * 100, count ? 8 : 0)}%` }}/></div></div>)}</div> }

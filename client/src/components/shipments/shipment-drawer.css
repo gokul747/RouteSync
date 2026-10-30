@@ -1,0 +1,8 @@
+.drawer-edit-button{width:100%;margin-top:22px}
+.row-actions{display:flex;align-items:center;gap:2px}
+.drawer-status-field{margin-top:16px}
+.drawer-status-error{margin-top:8px}
+.drawer-edit-form{grid-template-columns:1fr;gap:13px;margin-top:8px}
+.drawer-edit-form .form-actions{grid-column:1;justify-content:space-between;margin-top:7px}
+.drawer-edit-form .form-error{grid-column:1}
+.tracking-section{margin-bottom:20px}.tracking-message{font-size:10px!important;color:#98a2b0!important;border:0!important;padding:10px 0!important}.tracking-error{color:#c96b5c!important}.tracking-timeline{padding:4px 0 0 3px}.tracking-event{display:grid;grid-template-columns:9px 1fr;gap:10px;position:relative;padding:0 0 14px}.tracking-event:not(:last-child):before{content:"";position:absolute;left:3px;top:8px;bottom:-1px;width:1px;background:#e8edf5}.tracking-dot{width:7px;height:7px;margin-top:4px;border-radius:50%;background:#4c79ed;z-index:1;box-shadow:0 0 0 3px #edf3ff}.tracking-event>div{display:grid;gap:4px}.tracking-event strong{font-size:10px;text-transform:capitalize;color:#394657}.tracking-event span,.tracking-event small{font-size:9px;color:#8f99a7}.tracking-event small{color:#a8b0bb}
